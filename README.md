@@ -1,7 +1,7 @@
 This is my current development setup.
 
-#On Windows
-##Install Windows Subsystem for Linux (WSL)
+# On Windows
+## Install Windows Subsystem for Linux (WSL)
 
 Enable WSL in developer options and then install Ubuntu from the Microsoft Store.
 
@@ -28,13 +28,13 @@ To make zsh run by default (over bash), edit `.bashrc` with `vim ~./bashrc` (don
 bash -c zsh
 ```
 
-##Install Hyperterm(inal)
+## Install Hyperterm(inal)
 Download and install [hyperterm](https://hyper.is/). To use the Linux shell, open preferences (from app menu or `%USERPROFILE%/.hyper.js`) and edit:
 ```
 shell: 'C:\\Windows\\System32\\bash.exe',
 shellArgs: ['--login', '-i', '/c wsl'],
 ```
-###Customize Hyperterm with plugins
+### Customize Hyperterm with plugins
 Edit hyperterm preferences with:
 ```
 config: {
@@ -59,8 +59,8 @@ plugins: [
 - hyperterm-summon: hide and show hyperterm with `[ctrl][;]`
 - hyper-solarized-light: color scheme
 
-##Customize zsh
-###Plugins
+## Customize zsh
+### Plugins
 *Note: I have been unable to use a plugin manager due to carriage return errors.*
 
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): highlights command syntax. Helps catch typos. Download with:
@@ -83,7 +83,7 @@ plugins=(
 )
 ```
 
-###Theme
+### Theme
 [Powerlevel9k](https://github.com/bhilburn/powerlevel9k) is a customizable theme for zsh. First, you will need to install a [powerline font](https://github.com/powerline/fonts). I'm using a [patched nerd-font](https://github.com/ryanoasis/nerd-fonts), Inconsolata NF, which offers extra glyphs. Simply download the font file (.tff) and right click to install.
 
 Change the font in hyper preferences. In addition, edit the following line to fix powerline alignment:
@@ -134,4 +134,4 @@ POWERLEVEL9K_SHORTEN_STRATEGY=None
 ```
 *NOTE: the line `POWERLEVEL9K_MODE=''` must come before the theme selection. Exclude this  if you are using a powerline font. Use `POWERLEVEL9K_MODE='awesome-patched'` for patched awesome-powerline fonts. I have `POWERLEVEL9K_MODE='nerdfont-complete'` because I am using a nerd-font.*
 
-###VIM
+### VIM
