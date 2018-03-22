@@ -1,6 +1,7 @@
 This is my current development setup.
 
 # On Windows
+![hyper screenshot](https://github.com/edwardbaeg/dev-setup/blob/master/images/hyperterm.png)
 ## Install Windows Subsystem for Linux (WSL)
 
 Enable WSL in developer options and then install Ubuntu from the Microsoft Store.
